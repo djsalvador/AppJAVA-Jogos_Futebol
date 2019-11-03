@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="campeonato_brasileiro.FXML_Campeonato_BrasileiroController">
+   <children>
+
+<AnchorPane layoutX="6.0" layoutY="7.0" prefHeight="536.0" prefWidth="638.0" style="-fx-background-color: grey;">
+         <children>
+            <Text fill="WHITE" layoutX="192.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CAMPEONATO BRASILEIRO">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="44.0" fitWidth="72.0" layoutX="137.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/brasil.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="72.0" layoutX="452.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/brasil.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="389.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NÚMERO DE JOGOS" x="5.0" AnchorPane.leftAnchor="394.0">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nrJogos" layoutX="541.0" layoutY="94.0" prefHeight="25.0" prefWidth="63.0" />
+            <Text fill="WHITE" layoutX="7.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EQUIPE" x="5.0" AnchorPane.leftAnchor="12.0">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="equipe" layoutX="79.0" layoutY="128.0" prefHeight="25.0" prefWidth="287.0" />
+            <Text fill="WHITE" layoutX="384.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PONTUAÇÃO" x="5.0" AnchorPane.leftAnchor="389.0">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="pontuacao" layoutX="492.0" layoutY="128.0" prefHeight="25.0" prefWidth="112.0" />
+            <Text fill="WHITE" layoutX="9.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NÚMERO DE VITÓRIAS" wrappingWidth="90.220703125" x="5.0" AnchorPane.leftAnchor="14.0">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nrVitorias" layoutX="127.0" layoutY="168.0" prefHeight="25.0" prefWidth="63.0" />
+            <Text fill="WHITE" layoutX="223.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NÚMERO DE DERROTAS" wrappingWidth="90.220703125" x="5.0" AnchorPane.leftAnchor="228.0">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nrDerrotas" layoutX="326.0" layoutY="166.0" prefHeight="25.0" prefWidth="63.0" />
+            <Text fill="WHITE" layoutX="439.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NÚMERO DE EMPATES" wrappingWidth="90.220703125" x="5.0" AnchorPane.leftAnchor="444.0">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nrEmpates" layoutX="541.0" layoutY="166.0" prefHeight="25.0" prefWidth="63.0" />
+            <Text fill="WHITE" layoutX="7.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GOLS CONTRA" wrappingWidth="105.220703125" x="5.0" AnchorPane.leftAnchor="12.0">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="golsContra" layoutX="127.0" layoutY="204.0" prefHeight="25.0" prefWidth="63.0" />
+            <Text fill="WHITE" layoutX="413.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GOLS A FAVOR" wrappingWidth="112.220703125" x="5.0" AnchorPane.leftAnchor="418.0">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="golsFavor" layoutX="541.0" layoutY="204.0" prefHeight="25.0" prefWidth="63.0" />
+            <TextArea fx:id="idTextArea" layoutX="5.0" layoutY="256.0" prefHeight="160.0" prefWidth="627.0" />
+            <Label alignment="TOP_LEFT" layoutX="35.0" layoutY="243.0" nodeOrientation="LEFT_TO_RIGHT" text="EQUIPE" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="103.0" layoutY="243.0" nodeOrientation="LEFT_TO_RIGHT" text="PONTUAÇÃO" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="169.0" layoutY="243.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="13.0" prefWidth="98.0" text="NÚMERO DE VITÓRIAS" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="274.0" layoutY="243.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="7.0" prefWidth="105.0" text="NÚMERO DE DERROTAS" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="384.0" layoutY="243.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="13.0" prefWidth="105.0" text="NÚMERO DE EMPATES " textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="490.0" layoutY="243.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="6.0" prefWidth="63.0" text="GOLS CONTRA" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="564.0" layoutY="243.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="3.0" prefWidth="69.0" text="GOLS A FAVOR" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="69.0" fitWidth="76.0" layoutX="63.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/soccerpb.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="22.0" layoutY="496.0" mnemonicParsing="false" onAction="#ActionCarregarButton" text="CARREGAR" />
+            <Button layoutX="112.0" layoutY="496.0" mnemonicParsing="false" onAction="#ActionAbrirButton" text="ABRIR" />
+            <Text fill="WHITE" layoutX="172.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIME COM MAIOR NÚMERO DE VITÓRIAS">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="171.0" layoutY="473.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIME COM MAIOR ATAQUE">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="172.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIME COM MELHOR DEFESA">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="171.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIME COM MELHOR APROVEITAMENTO">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextArea layoutX="415.0" layoutY="429.0" prefHeight="100.0" prefWidth="217.0" />
+            <Label fx:id="LtimeMaiorVit" layoutX="427.0" layoutY="435.0" />
+            <Label fx:id="LtimeMaiorAtaq" layoutX="427.0" layoutY="460.0" />
+            <Label fx:id="LtimeMelhorDef" layoutX="427.0" layoutY="484.0" />
+            <Label fx:id="LtimeMelhorAprov" layoutX="427.0" layoutY="507.0" />
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Arquivo">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#handleMenuCloseAction" text="Sair" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
