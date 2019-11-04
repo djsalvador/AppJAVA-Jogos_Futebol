@@ -1,0 +1,25 @@
+Modelo de aplicativo desenvolvido em JAVA para controle de Jogos de Futebol.
+
+Permite inserir:
+- número total de jogos da competição, 
+- nome da equipe, 
+- pontuação, 
+- número de vitórias, 
+- número de derrotas,
+- número de empates (não deve ser superior ao número total de jogos), 
+- gols contra,
+-  gols a favor. 
+
+O botão carregar insere os dados no BD e o botão abrir abre (txt) a 
+lista de dados carregados. 
+
+Apresenta ainda:
+- o time com maior número de vitórias, 
+- o time com maior ataque, 
+- o time com maior defesa e 
+- o time com com melhor aproveitamento. 
+
+OBS.1: no arquivo compactado (.rar) está todo o projeto com imagens e afins.
+
+OBS.2: Este aplicativo não está funcional e serve apenas para demonstrar as
+habilidades básicas deste aprendiz de desenvolvedor.
