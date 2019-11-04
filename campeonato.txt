@@ -1,0 +1,5 @@
+CSA FC;34;6;3;1;4;6
+ASA de ARAPIRACA FC;23;3;5;2;8;2
+SP de RG;10;6;3;1;4;6
+Pelotas FC;9;5;4;1;6;4
+SJN FC;6;7;1;2;7;3
